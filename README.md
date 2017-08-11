@@ -59,6 +59,7 @@ In this step, we will create our server and have it listen on port `3000`.
 
 ### Instructions
 
+* Create a folder named `server`.
 * Create an `index.js` file in `server/`.
 * Open `server/index.js`.
 * Require `express` in a variable called `express` and require `body-parser` in a variable called `bodyParser`.
@@ -163,7 +164,7 @@ module.exports = {
 
 ### Summary
 
-In this step, we will import our controller into `server/index.js` and create a routes that use the methods on the controller.
+In this step, we will import our controller into `server/index.js` and create routes that use the methods on the controller.
 
 When creating a route you can use the `post`, `get`, `put`, and `delete` methods on app. The first argument is the URL of the request and the second argument is what function to execute when that URL is hit.
 
@@ -172,7 +173,7 @@ We will also fire up the server to make sure everything has been corrected corre
 ### Instructions
 
 * Open `server/index.js`.
-* Require the books controller under the router.
+* Require the books controller under the router and name it `bc`.
 * Above `port` create four routes on `app`:
   * `post` - `/api/books`, `bc.create`.
   * `get` - `/api/books`, `bc.read`.
